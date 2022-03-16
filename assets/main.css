@@ -4,14 +4,11 @@ body{
     display: block;
     justify-content: flex-start;
     min-height: 100vh;
-    background-color: black;
-    color: white;
+    background-color:antiquewhite;
+    color: black;
     }
 header{
     padding: 10px,10px;
-    background-color: red;
-    
-    
 }
 h1{
     display: block;
@@ -19,19 +16,19 @@ h1{
 }
 nav{
     display: flex;
-    background-color: aqua;
     justify-content: flex-end;
+    border: 50px;
+    padding: 50px,50px;
     
 }
 nav a{
-    color: black;
-    text-decoration: underline;
+    color: aliceblue;
 }
 button{
     width: 100px;
     height: 30px;
-    color: blue;
+    background-color: black;
 }
 button :hover{
-    background-color: red;
+    text-decoration: none;
 }
