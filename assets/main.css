@@ -49,7 +49,6 @@ button :hover {
 }
 aside {
     flex-direction: column;
-    border-style: solid;
     display: block;
     padding: 50px;
     border: 50px;
@@ -59,22 +58,27 @@ h2,h3,h4 {
 color: lightblue;
 text-decoration: solid;
 text-transform: capitalize;
-margin: 10px;
 font-size: larger;
 padding: 10px;
 border: 15px;
-border-top: 150px;
+border-top: 250px;
 text-align: start;
 float: left;
 }
 p {
-    text-align: left;
     color: black;
-    margin-top: 125px;
-    border-top: 100px;
-    justify-content: flex-start;
+    margin-top: 0px;
+    border-top: 10px;
+    margin-left: 300px;
+    justify-content: center;
+    float:right
 }
-.computer {
-    height: 450px;
-    width: 500px;
+img {
+    image-rendering: optimizeQuality;
+    width: max-content;
+    height: 300px;
+    display: inline-block;
+}
+@media screen {
+    
 }
