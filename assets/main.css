@@ -1,4 +1,10 @@
-body {
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
     display: block;
@@ -25,11 +31,14 @@ nav {
     padding-right: 50px;
     justify-content: space-around;
     position: relative;
-    top: -65px;
+    top: -80px;
 }
 nav a {
-    font-size: 15px;
+    font-size: 14px;
     color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 button {
     width: 100px;
@@ -48,37 +57,76 @@ button :hover {
     border: 20px;
 }
 aside {
-    flex-direction: column;
+    flex-direction: block;
     display: block;
-    padding: 50px;
-    border: 50px;
-    background-color: white;
+    padding: 10px;
+    border: 20px;
+    background-color:antiquewhite;
+    position:relative 40px 30px
 }
 h2,h3,h4 {
-color: lightblue;
+color: rgb(19, 98, 124);
 text-decoration: solid;
 text-transform: capitalize;
 font-size: larger;
 padding: 10px;
 border: 15px;
-border-top: 250px;
 text-align: start;
-float: left;
+margin-top: 150px;
+font-size: x-large;
+
 }
 p {
-    color: black;
-    margin-top: 0px;
-    border-top: 10px;
-    margin-left: 300px;
-    justify-content: center;
-    float:right
+    display: block;
+    flex-direction: column;
+    padding: 150px 50px;
+    float: left;
+    position: relative 50px;
+    top: -80px;
+    left: 130px;;
+    bottom: 150px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-img {
-    image-rendering: optimizeQuality;
-    width: max-content;
-    height: 300px;
-    display: inline-block;
+
+html {
+    scroll-behavior: smooth;
 }
-@media screen {
+
+.picture1 {
+    height: 800px;
+    width:900px;
+    top: 15px;
+    bottom: 10px;
+    left: 500px
+}
+.picture2 {
+    height: 500px;
+    width: 600px;
     
 }
+.picture3 {
+    height: 500px;
+    width: 600px;
+    left: 700px;
+    bottom: 500px;
+    
+}
+.picture4 {
+    height: 500px;
+    width: 1200px;
+    border-style: none;
+    border-radius: none;
+}
+img {
+    display: block;
+    border-style: solid;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
