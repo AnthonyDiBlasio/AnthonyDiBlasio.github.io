@@ -95,21 +95,23 @@ html {
 
 .picture1 {
     height: 800px;
-    width:900px;
+    width:910px;
     top: 15px;
     bottom: 10px;
-    left: 500px
+    left: 400px
 }
 .picture2 {
-    height: 500px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
+    left: 390px;
+    bottom: 15px;
     
 }
 .picture3 {
-    height: 500px;
-    width: 600px;
-    left: 700px;
-    bottom: 500px;
+    height: 400px;
+    width: 500px;
+    left: 795px;
+    bottom: 420px;
     
 }
 .picture4 {
@@ -121,12 +123,24 @@ html {
 img {
     display: block;
     border-style: solid;
+    border-color: black;
     position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     main,
     nav {
       flex-direction: column;
+      position: relative;
     }
+    .picture1,
+    .picture2,
+    .picture3 {
+        position: static;
+        display: block;
+        height: 500px;
+        width: 500px;
+       
+    }
+
   }
