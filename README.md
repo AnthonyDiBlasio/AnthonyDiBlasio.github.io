@@ -5,6 +5,8 @@ I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
 
+[URL](https://anthonydiblasio.github.io/)
+
 ```
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
@@ -20,6 +22,8 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
-[URL](https://anthonydiblasio.github.io/)
-![img1]()
-![img2]()
+
+![img1](https://raw.githubusercontent.com/AnthonyDiBlasio/AnthonyDiBlasio.github.io/main/assets/Screenshot%202022-03-19%20145626.jpg)
+![img2](https://raw.githubusercontent.com/AnthonyDiBlasio/AnthonyDiBlasio.github.io/main/assets/Screenshot%202022-03-19%20145652.jpg)
+![img3](https://raw.githubusercontent.com/AnthonyDiBlasio/AnthonyDiBlasio.github.io/main/assets/Screenshot%202022-03-19%20145716.jpg)
+![img4](https://raw.githubusercontent.com/AnthonyDiBlasio/AnthonyDiBlasio.github.io/main/assets/Screenshot%202022-03-19%20145732.jpg)
