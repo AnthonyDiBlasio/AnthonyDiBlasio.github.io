@@ -1,9 +1,10 @@
+/*establishes margins and padding for boxs */
 *{
     margin: 5px;
     padding: 5px;
     box-sizing: border-box;
   }
-
+/*styles and positions the body of the html */
   body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
@@ -13,16 +14,19 @@
     background-color:antiquewhite;
     color: black;
     }
+/* postions and styles the header*/
 header {
     padding: 10px;
     padding-left: 5px;
     display: block;
     background-color: lightblue;
 }
+/*postions h1 tag */
 h1 {
     display: inline;
     justify-content: flex-start;
 }
+/*styles and positions the nav section */
 nav {
     display: flex;
     flex-direction: row;
@@ -33,6 +37,7 @@ nav {
     position: relative;
     top: -80px;
 }
+/*styles the anchor tags under nav parent */
 nav a {
     font-size: 14px;
     color: black;
@@ -40,6 +45,7 @@ nav a {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/*postions and style button */
 button {
     width: 100px;
     height: 50px;
@@ -47,15 +53,18 @@ button {
     border-radius: 49%;
 }
 button :hover {
-    text-decoration: none;
+    text-shadow: none;
 }
+/*styles/postions avatar picture */
 .avatar {
     vertical-align: middle;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 20px;
+    display:inline ;
 }
+/*styles and positions the aside sections */
 aside {
     flex-direction: block;
     display: block;
@@ -64,6 +73,7 @@ aside {
     background-color:antiquewhite;
     position:relative 40px 30px
 }
+/* styles and positons <h> tags in the html*/
 h2,h3,h4 {
 color: rgb(19, 98, 124);
 text-decoration: solid;
@@ -74,8 +84,8 @@ border: 15px;
 text-align: start;
 margin-top: 150px;
 font-size: x-large;
-
 }
+/*styles and postions the <p> tag in html */
 p {
     display: block;
     flex-direction: column;
@@ -88,11 +98,11 @@ p {
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-
+/*makes html have smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
-
+/*positions the pictures in the html*/
 .picture1 {
     height: 800px;
     width:910px;
@@ -117,30 +127,30 @@ html {
 .picture4 {
     height: 500px;
     width: 1200px;
-    border-style: none;
-    border-radius: none;
 }
+/*styles img borders */
 img {
     display: block;
     border-style: solid;
     border-color: black;
     position: relative;
 }
-
-@media screen and (max-width: 900px) {
-    main,
-    nav {
+/*fixs page layout when changing the browser window size */
+@media screen and (max-width: 1280px) {
+    nav,
+    main {
       flex-direction: column;
-      position: relative;
+      position: static;
     }
     .picture1,
     .picture2,
-    .picture3 {
+    .picture3,
+    .picture4 {
         position: static;
         display: block;
-        height: 500px;
-        width: 500px;
-       
+        width: 100%;
+        height: auto;
     }
 
   }
+  
