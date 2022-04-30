@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
     <link rel="reset" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/main.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
+    <nav class="navbar navbar-dark bg-dark">
         <h1>anthony diblasio <span><img class = "avatar" src ="./assets/img_avatar.png" alt="avatar of me"></span></h1>
-    </header>
-    <nav>
-        <button><a href="#about">about me</a></button> 
-        <button><a href="#work">work</a></button>
-        <button><a href="#contact">contact me</a></button>
+        <button type="button" class="btn btn-primary btn-sm"><a href="#about">about me</a></button> 
+        <button type="button" class="btn btn-primary btn-sm"><a href="#work">work</a></button>
+        <button type="button" class="btn btn-primary btn-sm"><a href="#contact">contact me</a></button>
     </nav>
+</header>
 <aside>
     <h2>about me</h2>
 </aside>
@@ -27,20 +28,25 @@
     </p>
     </section>
 <aside>
-    <h3>work</h3>
+    <h3>work/projects</h3>
 </aside>
 <section id="work">
-        <a href="https://google.com">
-        <img src="./assets/firewatch.jpg" class="picture1" alt="firewatch tower" >
-        </a>
-    <div class="picture2">
-        <a href="https://google.com">
-        <img src="./assets/thumb-1920-468739.jpg" class="picture2" alt="earth from space" >
+    <div class = "container picture1">
+        <a href="https://github.com/AnthonyDiBlasio/stock-weather">
+        <img src="./assets/Screenshot 2022-04-30 151302.jpg" class="img-thumbnail" alt="" >
+        <div class ="top-right">Project 01</div>
         </a>
     </div>
-    <div class="picture3">
-        <a href="https://google.com">
-            <img src="./assets/windows-digital-abstract-4k-wallpaper.jpg" class="picture3" alt="windows abstract wallpaper" >
+    <div class="container picture2">
+        <a href="https://github.com/AnthonyDiBlasio/password-generator">
+        <img src="./assets/Screenshot 2022-04-30 151524.jpg" alt="" class="img-thumbnail" >
+        <div class ="top-right">password Generator</div>
+        </a>
+    </div>
+    <div class="container picture3">
+            <a href="https://github.com/AnthonyDiBlasio/coding-quiz">
+            <img src="./assets/Screenshot 2022-04-02 181039.jpg" alt="screenshot" class="img-thumbnail">
+            <div class ="top-right">Coding Quiz</div>
         </a> 
     </div>  
 </section>
@@ -48,9 +54,10 @@
     <h4>contact me</h4>
 </aside>
 <section id="contact">
-    <a href="https://google.com">
-        <img src="./assets/222577.jpg" class="picture4" alt="cat" >
+    <a href="https://github.com/AnthonyDiBlasio">
+        <img src="" class="picture4" alt="" >
     </a>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
