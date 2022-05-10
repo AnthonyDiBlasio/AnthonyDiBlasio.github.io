@@ -1,12 +1,23 @@
 # AnthonyDiBlasio.github.io
+![apace](https://img.shields.io/badge/license-Apache%20License%202.0-blue)
+## Description
+I WANT to view a potential employee's deployed portfolio of work samples
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+## Installation
+none
+## Usage
 ```
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
-
-[URL](https://anthonydiblasio.github.io/)
-
 ```
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
@@ -22,8 +33,26 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
-
+[URL](https://anthonydiblasio.github.io/)
 ![img1]()
 ![img2]()
 ![img3]()
 ![img4]()
+
+## License
+
+This application is covered by the Apache v2.0 License, the terms of which can be found [here](https://www.apache.org/licenses/LICENSE-2.0.txt).
+    
+## Contributing
+
+## Tests
+
+## Questions
+[GitHub Profile](https://github.com/AnthonyDiBlasio/)  
+
+
+
+
+
+
+
