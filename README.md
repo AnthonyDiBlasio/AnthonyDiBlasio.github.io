@@ -1,7 +1,7 @@
 # AnthonyDiBlasio.github.io
 ![apace](https://img.shields.io/badge/license-Apache%20License%202.0-blue)
 ## Description
-I WANT to view a potential employee's deployed portfolio of work samples
+I WANT to view my deployed portfolio of work samples
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -11,7 +11,7 @@ I WANT to view a potential employee's deployed portfolio of work samples
 * [Tests](#tests)
 * [Questions](#questions)
 ## Installation
-none
+https://anthonydiblasio.github.io/
 ## Usage
 ```
 AS AN employer
@@ -44,7 +44,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 This application is covered by the Apache v2.0 License, the terms of which can be found [here](https://www.apache.org/licenses/LICENSE-2.0.txt).
     
 ## Contributing
-
+https://github.com/AnthonyDiBlasio/
 ## Tests
 
 ## Questions
