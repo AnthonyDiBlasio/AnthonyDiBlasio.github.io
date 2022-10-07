@@ -3,12 +3,12 @@ import myImg from '../../img_avatar.png'
 
 export default function About() {
     return (
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">About me</h2>
-                        <p class="text-white-50">
+        <section className="about-section text-center" id="about">
+            <div className="container px-4 px-lg-5">
+                <div className="row gx-4 gx-lg-5 justify-content-center">
+                    <div className="col-lg-8">
+                        <h2 className="text-white mb-4">About me</h2>
+                        <p className="text-white-50">
                             Hi my name is Anthony DiBlasio, this portfolio is an introduction to some of my recent work,
                             links to projects, and contact information.
                             A little about me is that I started my career in Real Estate. After managing to find other
@@ -19,7 +19,7 @@ export default function About() {
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid rounded-circle"
+                <img className="img-fluid rounded-circle"
                     src={myImg} alt="..." />
             </div>
         </section>
