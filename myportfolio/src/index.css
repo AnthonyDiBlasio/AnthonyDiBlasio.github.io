@@ -11632,7 +11632,13 @@ body {
 .linkedin{
   height: 30px;
   width: 30px;
-  margin-left: 140px;
+ position: absolute;
+ bottom: 15%;
+ right: 46%;
+
+}
+.propic{
+  opacity: .3;
 }
 .signup-section {
   padding: 10rem 0;

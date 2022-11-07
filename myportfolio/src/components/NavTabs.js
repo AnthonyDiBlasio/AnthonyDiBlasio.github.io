@@ -4,7 +4,7 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul  className="navbar-dark bg-dark nav nav-tabs">
       <li className="nav-item">
         <a
           href="#home"
@@ -19,7 +19,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-          //  TODO: Add a comment explaining what this logic is doing
 
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
@@ -30,7 +29,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#projects"
           onClick={() => handlePageChange('Projects')}
-          //  TODO: Add a comment explaining what this logic is doing
+         
 
           className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
         >
@@ -40,7 +39,6 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#contact"
-          //  TODO: Add a comment explaining what this logic is doing
 
           onClick={() => handlePageChange('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}

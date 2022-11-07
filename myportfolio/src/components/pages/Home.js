@@ -3,8 +3,6 @@ import React from 'react';
 export default function Home() {
   return (
     <div>
-      <h1>Meet</h1>
-      
     <header className="masthead">
         <div className="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div className="d-flex justify-content-center">

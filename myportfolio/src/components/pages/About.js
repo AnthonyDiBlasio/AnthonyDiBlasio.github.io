@@ -1,9 +1,10 @@
 import React from "react";
-import myImg from '../../img_avatar.png'
+import myImg from '../../propic2.jpg'
 
 export default function About() {
     return (
         <section className="about-section text-center" id="about">
+              
             <div className="container px-4 px-lg-5">
                 <div className="row gx-4 gx-lg-5 justify-content-center">
                     <div className="col-lg-8">
@@ -17,10 +18,10 @@ export default function About() {
                             Mazda Miata, and spending time learning new skills and hobbies, such as fpv drones, playing the
                             guitar, cooking, and many others.
                         </p>
-                    </div>
+                    </div><img style={{float: ""}} className="propic img-fluid "
+                    src={myImg} alt="..." ></img>
                 </div>
-                <img className="img-fluid rounded-circle"
-                    src={myImg} alt="..." />
+              
             </div>
         </section>
 
