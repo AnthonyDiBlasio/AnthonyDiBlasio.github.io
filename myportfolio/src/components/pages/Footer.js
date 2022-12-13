@@ -1,7 +1,7 @@
 import React from "react";
 import githublogo from '../../github-512.webp'
 
-
+//footer
 export default function Footer() {
     return (
         <footer>
