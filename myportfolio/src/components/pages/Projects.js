@@ -1,5 +1,5 @@
 import React from "react";
-import projImage1 from '../../Screenshot 2022-04-30 151302.jpg'
+
 import projImage2 from '../../Screenshot 2022-07-06 113416.jpg'
 import projImage3 from '../../Screenshot 2022-10-24 135025.jpg'
 import Carousel from 'react-bootstrap/Carousel';
@@ -9,17 +9,7 @@ export default function Projects() {
     return (
         <section className="">
             <Carousel variant ="dark" fade>
-                <Carousel.Item><a href="https://github.com/AnthonyDiBlasio/stock-weather">
-                    <img
-                        className="d-block w-100"
-                        src={projImage1}
-                        alt="First slide"
-                    /></a>
-                    <Carousel.Caption>
-                        <h3>Project Mist</h3>
-                        <p>This was a project showing off my capabilty of working with server side APIS.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+             
                 <Carousel.Item><a href="https://github.com/cpaschall/codeOp">
                     <img
                         className="d-block w-100"

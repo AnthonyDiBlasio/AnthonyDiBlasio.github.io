@@ -14,7 +14,7 @@ export default function Footer() {
                                 <div className="card-body text-center">
                                     <i className="fa-solid fa-briefcase text-primary mb-2"></i>
                                     <a
-                                        href="https://drive.google.com/file/d/1JFJty-foRxRZ9lECpdcAM4pDUjCh-cq4/view?usp=sharing">
+                                        href="https://drive.google.com/file/d/1N68LC0PbqARABMsE-EkuA6-WJzg1_lcW/view?usp=sharing">
                                         <h4 className="text-uppercase m-0">Resume</h4>
                                     </a>
                                     <hr className="my-4 mx-auto" />
