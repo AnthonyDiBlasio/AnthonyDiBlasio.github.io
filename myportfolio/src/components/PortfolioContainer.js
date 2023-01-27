@@ -4,8 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import Footer from './pages/Footer'
-
+import Footer from './Footer'
+import '../index.css';
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
@@ -28,7 +28,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div style={{position:"relative", height:"100vh"}}>
       {/* Gets navtabs.js */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* renders portfolio page */}

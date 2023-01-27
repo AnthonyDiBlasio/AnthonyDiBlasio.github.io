@@ -2,21 +2,22 @@ import React from 'react';
 
 
 
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul  className="navbar-dark bg-dark nav nav-tabs">
-      <li className="nav-item">
-        <a
+    <ul style={{marginTop:"3pc"}} className="nav nav-tabs">
+      <li style={{marginLeft:"3pc" }} className="nav-item">
+        <a style={{fontWeight:"bold",fontSize:"15px",color:"black"}}
           href="#home"
           onClick={() => handlePageChange('Home')}
 
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
-          Home
+          Anthony DiBlasio
         </a>
       </li>
-      <li className="nav-item">
-        <a
+      <li style={{marginLeft:"5pc",}}className="nav-item">
+        <a style={{fontWeight:"bold"}}
           href="#about"
           onClick={() => handlePageChange('About')}
 
@@ -43,7 +44,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           onClick={() => handlePageChange('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
-          Contact
+         Contact Me
         </a>
       </li>
     </ul>

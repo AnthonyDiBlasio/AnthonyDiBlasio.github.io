@@ -1,19 +1,24 @@
 import React from 'react';
+import '../../index.css'
 
 export default function Home() {
   return (
-    <div>
-    <header className="masthead">
-        <div className="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div className="d-flex justify-content-center">
-                <div className="text-center">
-                    <h1 className="mx-auto my-0 text-uppercase">Anthony DiBlasio</h1>
-                    <h2 className="text-white-50 mx-auto mt-2 mb-5">I am a full-stack web developer/software engineer.</h2>
-                </div>
-            </div>
-        </div>
-    </header>
-  
-    </div>
+ 
+ 
+
+       <section  style={{ marginTop: "5pc",marginBottom:"5pc" }} className="grid-container">
+    
+       <div className="grid-child" style={{fontWeight:"bold",marginLeft:"5pc", marginTop: "5pc" }}>
+         <h1 style={{color:"black", marginTop: "2pc", marginLeft: "5pc" }} className="">Hi.</h1>
+         
+     
+       </div>
+       <div className="grid-child" style={{fontWeight:"bold", marginTop: "5pc" }}>
+       <h1 style={{color:"black", marginTop: "2pc",marginBottom:"2pc", marginLeft: "-15pc" }} className="">My Name is Anthony DiBlasio</h1>
+       <h3>Developer & Designer</h3>
+       
+       </div>
+       </section>
+   
   );
 }
