@@ -20,7 +20,7 @@ export default function Projects() {
 
                     <h1 style={{ marginLeft: "5pc" }}>Projects</h1>
                     <div className="line-container2" ></div>
-                    <a href='https://github.com/AnthonyDiBlasio/ratwerksllc '>
+                    <a href='https://www.ratwerks.org '>
                         <h3 style={{marginTop: "1pc", color: "black", marginLeft: "6pc" }}
                             onMouseEnter={() => setIsHovering(true)}
                             onMouseLeave={() => setIsHovering(false)}
@@ -28,7 +28,7 @@ export default function Projects() {
                         >
                             Ratwerks Engineering
                         </h3></a>
-                    <a href='https://github.com/AnthonyDiBlasio/RentMyRide'> <h3 style={{ color: "black", marginLeft: "6pc" }}
+                    <a href='https://rentmyride01.herokuapp.com/'> <h3 style={{ color: "black", marginLeft: "6pc" }}
                         onMouseEnter={() => setIsHovering2(true)}
                         onMouseLeave={() => setIsHovering2(false)}
 
@@ -56,7 +56,7 @@ export default function Projects() {
                                 <div className=''>
 
 
-                                    <img style={{ marginTop: "2pc", borderRadius: "5%", height: "300px", width: "500px" }} src={rentmyride} alt="rentmyride" className='img-fluid' />
+                                    <img style={{ marginTop: "2pc", borderRadius: "5%", height: "300px", width: "600px" }} src={rentmyride} alt="rentmyride" className='img-fluid' />
 
                                 </div>
                             )}

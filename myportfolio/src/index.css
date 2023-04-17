@@ -14,7 +14,7 @@ width: 100%;
 }
 
 .grid-container{
-  height: 52vh;
+  height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: white;
@@ -86,7 +86,7 @@ p{
     content: '';
     display: block;
     height: 5px;
-    top: 41%;
+    top: 29%;
     left: 0%;
     margin-left: -1px;
     position: absolute;
@@ -121,7 +121,7 @@ p{
   }
   
   .footer-basic li {
-	padding:0 10px;
+	padding: 0px;
   }
   
   .footer-basic ul a {
@@ -136,7 +136,7 @@ p{
   
   .footer-basic .social {
 	text-align:center;
-	padding-bottom:25px;
+
   }
   
 
@@ -146,6 +146,7 @@ p{
 	font-size:13px;
 	color:#aaa;
 	margin-bottom:0;
+  padding: 70px;
   }
   
 .aboutPhoto{
