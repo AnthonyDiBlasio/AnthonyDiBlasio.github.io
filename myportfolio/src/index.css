@@ -85,21 +85,20 @@ p{
     background-color: wheat;
     content: '';
     display: block;
-    height: 5px;
-    top: 29%;
-    left: 0%;
-   
-    position: absolute;
-    width: 1400px;
-    padding: 1px;
+    height: 40px;
+    left: 30%;
+    top: 50%;
   
+    position: absolute;
+    width: 2px;
+    padding: 1px;
   }
   .line-container2{
     background-color: wheat;
     content: '';
     display: block;
     height: 5px;
-    top: 33%;
+    top: auto;
     left: 0%;
     margin-left: 6pc;
     position: absolute;
