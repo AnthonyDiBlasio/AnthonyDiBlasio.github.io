@@ -10,7 +10,7 @@ export default function Contact() {
                 
                 <p style={{marginTop:"" }}><a style={{marginTop:"15pc", marginLeft:"" ,color: "#353535" }} href="https://github.com/AnthonyDiBlasio">Follow me on GitHub</a></p>
                 <p ><a style={{marginLeft:"" ,color: "#353535"  }} href="https://www.linkedin.com/in/anthony-diblasio">Connect on LinkedIn</a></p>
-                <p ><a style={{marginLeft:"", color: "#353535" }} href="https://drive.google.com/file/d/1N68LC0PbqARABMsE-EkuA6-WJzg1_lcW/view?usp=share_link">Check out my resume</a></p>
+                <p ><a style={{marginLeft:"", color: "#353535" }} href="https://docs.google.com/document/d/19dz01Knl24N503VwSuvD84Nkmgfk6e8UxsTLOKc1kyE/edit?usp=sharing">Check out my resume</a></p>
                 
 
             </div>
