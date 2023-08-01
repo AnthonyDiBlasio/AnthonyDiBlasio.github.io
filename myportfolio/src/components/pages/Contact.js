@@ -16,7 +16,7 @@ export default function Contact() {
             </div>
           
             <div className="line-container" ></div>
-            <div style={{marginTop:"14pc" }} className="container" >
+            <div style={{marginTop:"14pc" }} className="container-email" >
                 <h1 style={{fontWeight:"bold"}}>Email me</h1>
                 <p><a style={{marginTop:"15pc", color: "#353535" }} href="mailto:anthony.diblasio11@gmail.com">anthony.diblasio11@gmail.com</a></p>
                 </div>
