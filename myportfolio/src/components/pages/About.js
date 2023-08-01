@@ -5,7 +5,7 @@ import aboutPhoto from '../../images/aboutPhoto.jpg'
 export default function About() {
     return (
         <section  style={{marginTop:"9pc",marginBottom:"50pc"}}className="about-section col-12" id="about">
-                    <div style={{position:"absolute", marginTop:"22pc",marginLeft:"15pc"}} className="">
+                    <div style={{position:"absolute", marginTop:"22pc",marginLeft:"15pc"}} className="about-ref">
                        <img className="aboutPhoto"src={aboutPhoto} alt="propic"></img>
                        <p ><a style={{color:"#353535"}}href="https://github.com/AnthonyDiBlasio">Follow me on GitHub</a></p>
                        <p ><a style={{color:"#353535"}}href="https://www.linkedin.com/in/anthony-diblasio">Connect on LinkedIn</a></p>

@@ -7,8 +7,6 @@ export default function Footer() {
     <div  className="footer-basic">
     <footer>
         <div className="social"></div>
-        
-      
         <p className="copyright">copyright &copy; anthonydiblasio.github.io 2023</p>
     </footer>
     </div>
