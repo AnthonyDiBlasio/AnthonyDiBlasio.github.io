@@ -1,328 +1,71 @@
-/* Base styles for all devices */
-body,
-html,
-.container-all {
-  line-height: 1.25;
-  background-color: white !important;
-  -webkit-text-size-adjust: 100%;
-  height: 100%;
-  position: relative;
-  display: inline-block;
-  scroll-behavior: smooth;
-  font-family: "NeueMontreal" !important;
-  width: 100%;
-}
-
-/* Grid container style */
-.grid-container {
-  height: 60vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: white;
-  opacity: 96%;
-}
-.about-ref{
-top: 20pc;
-  left: -7pc!important;
-}
-
-/* About section style */
-.about-section {
-  min-height: 70vh;
-  /* Use min-height instead of height to allow for content overflow */
-  font-family: 'NeueMontreal';
-  background-color: white;
-  display: flex;
-  /* Use flexbox to align content vertically */
-  justify-content: center;
-  /* Center content horizontally */
-  align-items: center;
-  /* Center content vertically */
-  flex-direction: column;
-  /* Stack content vertically on mobile */
-  padding: 2rem;
-  /* Add padding to improve readability */
-  text-align: center;
-  /* Center text on mobile */
-}
-
-.aboutPhoto {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  /* Make the image square */
-  margin-bottom: 1rem;
-}
-
-.about-text {
-  max-width: 400px;
-  /* Limit the text width for better readability on mobile */
-}
-
-/* Contact card style */
-.cardContact {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
-  border-radius: 10px;
-  /* Add rounded corners to the card */
-}
-.container-email{
-  position: relative;
-  top: -25pc;
-  left: 50pc;
-  max-width: 200px;
-}
-
-/* Projects container style */
-.container-projects {
-  height: 80vh;
-  font-family: 'NeueMontreal';
-}
-
-/* Contact section style */
-.contact-section {
-  height: 70vh;
-  font-family: 'NeueMontreal';
-}
-
-/* Paragraph style */
-p {
-  line-height: 2;
-}
-
-/* Navigation styles */
-.nav,
-.nav-tabs,
-.nav-link.active,
-.nav-item {
-  background-color: #f9f9f9;
-  /* Update background color for nav-tabs */
-  color: #353535 !important;
-  border-color: wheat !important;
-}
-
-.nav-tabs {
-  display: flex;
-  justify-content: space-between;
-  /* Spread the nav links on mobile */
-  align-items: center;
-  /* Center the nav links vertically */
-  padding: 0 1rem;
-  position: sticky;
-  top: 0;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  padding: 0;
+/* Styles for desktop screens */
+* {
   margin: 0;
-}
-
-.nav-item {
-  margin-left: 1rem;
-}
-
-.nav-link {
-  font-size: 15px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.nav-link.active {
-  color: #353535;
-}
-
-/* Collapsible navbar styles */
-.menu-icon {
-  display: none;
-}
-
-/* Footer styles */
-.footer-basic,
-.footer {
-  /* Keep the footer at the bottom */
-  position: relative;
-  padding: 40px;
-  background-color: #353535;
-  display: block;
-  width: 100%;
-  background-image: url("./images/blacksand.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 90%;
-  bottom: 0;
-}
-
-.footer-basic ul {
   padding: 0;
-  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: 'PPNeueMontreal-Thin', sans-serif;
+}
+
+/* Root styles */
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+background-color: #f6f0ed;
+}
+
+/* Header styles */
+.header {
   text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
-  color: wheat;
-  opacity: 0.5;
-  text-shadow: 1px 1px 2px black;
-  text-underline-position: auto;
+  margin-top: 2pc;
+  margin-bottom: 10pc;
+  font-family: 'PPNeueMontreal-thin', sans-serif;
 }
 
-.footer-basic li {
-  padding: 0px;
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
 }
 
-.footer-basic ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
+/* Row styles */
+.row {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  margin: auto;
 }
 
-.footer-basic ul a:hover {
-  opacity: 1;
+/* Wheel container styles */
+.wheel-container {
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 5pc;
 }
 
-.footer-basic .social {
+/* Skills container styles */
+.skills-container {
+  margin-top: 10pc;
+  margin-bottom: 5pc;
+  padding: 10px;
+  margin: 10px;
   text-align: center;
 }
 
-.footer-basic .copyright {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 13px;
-  color: #aaa;
-  margin-bottom: 0;
-  padding: 70px;
-}
-
-/* Media Queries for Mobile Devices */
-
-/* Smartphones */
-@media (max-width: 767px) {
-
-
-  .grid-container {
-
-    grid-template-columns: 1fr;
-    /* Single column layout on mobile */
-  }
-
-  .name-statement {
-    position: relative;
-    left: 17pc !important;
-  }
-
-  .about-section {
-    min-height: auto;
-    /* Remove min-height for flexible height */
-    padding: 1rem;
-    /* Adjust padding for better spacing */
-  }
-
-  .aboutPhoto {
-    width: 100px;
-    /* Make the image smaller on mobile */
-    height: 100px;
-  }
-
-  .nav-tabs {
-    flex-wrap: wrap;
-    /* Wrap the nav links on mobile */
-    justify-content: center;
-    /* Center the nav links on mobile */
-  }
-
-  .nav-item {
-    margin-left: 0;
-  }
-
-  .nav-links {
-    display: none;
-    /* Hide the nav links on mobile */
-    flex-direction: column;
-    max-height: 0;
-    overflow: hidden;
-  }
-
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
-
-  .bar {
-    width: 25px;
-    height: 2px;
-    background-color: #353535;
-    margin: 6px 0;
-    transition: transform 0.2s, opacity 0.2s;
-  }
-
-  .nav-links.open {
-    display: flex;
-    /* Show the nav links when the menu is open */
-    max-height: 300px;
-    /* Set a max-height for the collapsible part */
-  }
-
-
-  .grid-container {
-    height: auto;
-    /* Remove fixed height to allow content to expand */
-    grid-template-columns: 1fr;
-    /* Single column layout on mobile */
-  }
-
-  h1 {
-    max-width: 300px;
-  }
-
-  .grid-item {
-    max-width: 100%;
-    /* Allow the grid items to take the full width on mobile */
-  }
-
-  /* Footer adjustments on mobile */
-
-  /* About section adjustments */
-  .about-section {
-    min-height: auto;
-    /* Remove min-height for flexible height */
-    padding: 1rem;
-    /* Adjust padding for better spacing */
-  }
-
-  .col-6 {
-    position: relative;
-    width: 300px !important;
-    left: -7pc !important;
-  }
-
-  .about-ref {
-    left: -7pc !important;
-    top: 105pc;
-  }
-
-  .col-10 {
-    position: relative;
-    width: 300px !important;
-    left: -7pc !important;
-  }
-
-  .aboutPhoto {
-    position: relative !important;
-    width: 100px;
-    /* Make the image smaller on mobile */
-    height: 100px;
-
-  }
-
-  .about-text {
-    max-width: 100%;
-    /* Allow text to take the full width on mobile */
-  }
-
-
+/* Define the custom font */
+@font-face {
+  font-family: 'PPNeueMontreal-Thin';
+  src: url('./fonts/PPNeueMontreal-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

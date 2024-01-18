@@ -1,61 +1,62 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {  faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
-function NavTabs({ currentPage, handlePageChange }) {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+
+import '../index.css';
+
+function NavTabs() {
+  const socialLinks = [
+    { link: "https://github.com/AnthonyDiBlasio", icon: faGithub },
+    { link: "https://docs.google.com/document/d/19dz01Knl24N503VwSuvD84Nkmgfk6e8UxsTLOKc1kyE/edit?usp=sharing", icon:faFileAlt },
+    { link: "https://www.linkedin.com/in/anthony-diblasio/", icon: faLinkedin },
+  ];
 
   return (
-    <nav className="nav-tabs" style={{ }}>
-      <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleNavbar}>
-        <div className="bar" />
-        <div className="bar" />
-        <div className="bar" />
+    <div style={styles.navbar}>
+      <div>
+        <Link to="/" style={styles.link}>
+          Anthony DiBlasio
+        </Link>
       </div>
-      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li style={{ marginLeft: "3pc" }} className="nav-item">
-          <a
-            style={{ fontWeight: "bold", fontSize: "15px", color: "black" }}
-            href="#home"
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-          >
-            Anthony DiBlasio
+
+      <div style={styles.rightLinks}>
+        {socialLinks.map((item, index) => (
+          <a key={index} href={item.link} style={styles.link} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={item.icon} />
           </a>
-        </li>
-        <li style={{}} className="nav-item">
-          <a
-            style={{ fontWeight: "bold" }}
-            href="#about"
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-          >
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#projects"
-            onClick={() => handlePageChange('Projects')}
-            className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
-          >
-            Projects
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#contact"
-            onClick={() => handlePageChange('Contact')}
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-          >
-            Contact Me
-          </a>
-        </li>
-      </ul>
-    </nav>
+        ))}
+      </div>
+    </div>
   );
 }
+
+const styles = {
+  navbar: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  container: {
+    margin: 'auto',
+    maxWidth: '1200px',
+    display: 'flex',
+    alignItems: 'center',
+    width: '100%',
+  },
+  link: {
+    color: '#333',
+    fontSize: '18px',
+    marginRight: '20px',
+    padding: '5px',
+    textDecoration: 'none',
+  },
+  rightLinks: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+};
 
 export default NavTabs;
