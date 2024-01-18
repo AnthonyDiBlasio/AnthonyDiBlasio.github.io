@@ -1,3 +1,4 @@
+//Home.js
 import React from 'react';
 import '../index.css';
 import Wheel from './Wheel';
@@ -10,12 +11,12 @@ const Home = () => {
     container: {
       position: 'relative',
       padding: '20px',
-      boxShadow: '0 0 20px rgba(0, 0, 0, 0.3)', // Add a subtle shadow
+      boxShadow: '0 0 20px rgba(0, 0, 0, 0.3)', 
     },
     border: {
-      border: '50px solid transparent', // Set the frame border with a transparent color
-      borderImage: 'radial-gradient(circle, #93d6eb, #f6f0ed) 1', // Apply the radial gradient as a border image
-      boxShadow: '0 0 0 50px rgba(0, 0, 0, 0.3)', // Add a subtle shadow outside the border
+      border: '50px solid transparent', 
+      borderImage: 'radial-gradient(circle, #93d6eb, #f6f0ed) 1', // radial gradient as a border image
+      boxShadow: '0 0 0 50px rgba(0, 0, 0, 0.3)', 
       position: 'relative',
       padding: '20px',
     },
@@ -38,9 +39,9 @@ const Home = () => {
       
       </section>
       <section className='row'>
-        <div className=''>
+        
           <Skills />
-        </div>
+       
       </section>
       <Footer />
       </div>

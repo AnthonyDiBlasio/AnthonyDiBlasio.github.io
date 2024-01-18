@@ -1,3 +1,4 @@
+// WeatherController.js
 class WeatherController {
     constructor(apiKey, units) {
       this.apiKey = apiKey;

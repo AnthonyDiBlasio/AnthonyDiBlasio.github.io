@@ -1,4 +1,4 @@
-
+//Footer.js
 import React, { useEffect, useState, useRef } from 'react';
 import '../index.css'
 import WeatherController from './WeatherController';
@@ -12,7 +12,7 @@ export default function Footer() {
     weather: {
       position:'center',
       marginTop:"5pc",
-      maxWidth: "500px",
+      maxWidth: "100px",
   
       cursor: "grab",
     }
@@ -58,7 +58,7 @@ export default function Footer() {
     const intervalId = setInterval(updateCurrentTime, 1000);
 
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []); // Empty dependency array effect runs once on mount
 
   return (
     <div  className="">
@@ -72,7 +72,6 @@ export default function Footer() {
                 <div className='col-2'> {currentTime}</div>
                 <div className='col-2'>Temperature: {currentWeather.main.temp} °F</div>
                 <div className='col-2'>Humidity: {currentWeather.main.humidity}%</div>
-              
               </div>
             </Draggable>
           )}

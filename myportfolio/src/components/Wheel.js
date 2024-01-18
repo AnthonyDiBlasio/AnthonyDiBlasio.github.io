@@ -1,4 +1,3 @@
-
 // Wheel.js
 import React, { Component } from "react";
 import Card from "./Card";
@@ -15,14 +14,12 @@ export class Wheel extends Component {
     super(props);
 
     this.state = {
-      radius: 200,
+      radius: 100,
       cards: [],
       hasSpun: false,
-      isHovering: false,
     };
 
     this.temp_theta = 0.0;
-    this.anim_id = null;
 
     this.images = [
       githublogo,
@@ -70,93 +67,32 @@ export class Wheel extends Component {
     this.setState({ cards: new_cards });
   }
 
-  handleMouseEnter = (event) => {
-    const isOverCenterImage = this.isMouseOverCenterImage(event);
-
-    if (isOverCenterImage) {
-      if (!this.state.hasSpun) {
-        this.spinWheel();
-        this.setState({ hasSpun: true });
-      }
-    } else {
-      this.enlargeCard(event);
+  handleWheelClick = () => {
+    if (!this.state.hasSpun) {
+      this.spinWheel();
+      this.setState({ hasSpun: true });
     }
-
-    this.setState({ isHovering: true });
-  };
-
-  handleMouseLeave = () => {
-    this.setState({ isHovering: false });
-    clearTimeout(this.anim_id);
-
-    if (this.state.hasSpun) {
-      this.rotateToZero();
-      this.setState({ hasSpun: false });
-    }
-  };
-
-  isMouseOverCenterImage = (event) => {
-    const rect = this.wheel.getBoundingClientRect();
-    return (
-      event.clientX >= rect.left &&
-      event.clientX <= rect.right &&
-      event.clientY >= rect.top &&
-      event.clientY <= rect.bottom
-    );
   };
 
   rotateToZero = () => {
-    const rotationStep = 1;
-    const rotateBack = () => {
-      if (this.temp_theta > 0) {
-        this.temp_theta -= rotationStep;
-        this.wheel.style.transform = `translate(-50%, -50%) rotate(${
-          (this.temp_theta * 1) % 360
-        }deg)`;
-        requestAnimationFrame(rotateBack);
-      } else {
-        this.setState({ hasSpun: false });
-      }
-    };
-
-    rotateBack();
+    this.temp_theta = 0;
+    this.wheel.style.transition = "transform 1s ease-in-out";
+    this.wheel.style.transform = `translate(-50%, -50%) rotate(${this.temp_theta}deg)`;
   };
 
   spinWheel = () => {
     this.temp_theta += 360; // Rotate by 360 degrees for a single spin
 
-    this.wheel.style.transform = `translate(-50%, -50%) rotate(${
-      (this.temp_theta * 1) % 360
-    }deg)`;
+    this.wheel.style.transition = "transform 3s cubic-bezier(0.1, 2.7, 0.58, 1)";
+    this.wheel.style.transform = `translate(-50%, -50%) rotate(${this.temp_theta}deg)`;
+
+  
   };
-
-  enlargeCard(event) {
-    const cards = document.getElementsByClassName("card");
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
-
-    for (let i = 0; i < cards.length; i++) {
-      const cardRect = cards[i].getBoundingClientRect();
-
-      const isMouseOverCard =
-        mouseX >= cardRect.left &&
-        mouseX <= cardRect.right &&
-        mouseY >= cardRect.top &&
-        mouseY <= cardRect.bottom;
-
-      if (isMouseOverCard) {
-        cards[i].style.transform = "scale(1.2)";
-      } else {
-        cards[i].style.transform = "scale(1)";
-      }
-    }
-  }
 
   render() {
     return (
       <div
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
+        onClick={this.handleWheelClick}
         ref={(ref_id) => (this.wheel = ref_id)}
         style={{
           ...styles.wheel,
@@ -175,10 +111,13 @@ const styles = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    height: "200px",
-    width: "200px",
+    height: "100px",
+    width: "100px",
     borderRadius: "50%",
     backgroundSize: "cover",
+    cursor: "pointer",
+    marginBottom: '5pc',
+
   },
 };
 

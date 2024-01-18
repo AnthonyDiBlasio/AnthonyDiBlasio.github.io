@@ -52,11 +52,12 @@ const styles = {
   card: {
     position: "absolute",
     transform: "translate(-50%, -50%)",
-    height: "100px",
-    width: "100px",
+    height: "60px",
+    width: "60px",
     borderRadius: "50%",
     cursor: "pointer", 
     transition: "transform 0.3s ease-in-out", 
+   
   },
   imageContainer: {
     width: "100%",
@@ -69,6 +70,7 @@ const styles = {
     height: "100%",
     borderRadius: "50%",
   },
+
 };
 
 export default React.memo(Card);
