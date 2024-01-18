@@ -1,27 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.35961376.css",
-    "main.js": "/static/js/main.02415157.js",
+    "main.css": "/static/css/main.fcf36db6.css",
+    "main.js": "/static/js/main.a51c2dac.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
-    "static/media/blacksand.jpg": "/static/media/blacksand.9b9c403f2ff8b2bf234c.jpg",
-    "static/media/aboutPhoto.jpg": "/static/media/aboutPhoto.b7f88f4192731e967cb6.jpg",
+    "static/media/rentmyride.png": "/static/media/rentmyride.27e98725acb5b9648bdd.png",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
+    "static/media/PPNeueMontreal-Thin.ttf": "/static/media/PPNeueMontreal-Thin.79ab813ef18c7e673de5.ttf",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.3ac6859b28be946745f9.woff2",
-    "static/media/rentmyride.jpg": "/static/media/rentmyride.22859030a813007cc524.jpg",
+    "static/media/LinkedIn_icon_circle.svg.png": "/static/media/LinkedIn_icon_circle.svg.66ffd29ac1bb3de67249.png",
+    "static/media/graphql.svg.png": "/static/media/graphql.svg.0fed447ce4ed74374bdb.png",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
+    "static/media/sql.png": "/static/media/sql.96af83e68e3b32fb2dd7.png",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.1f3772178d9e5bed38a6.woff2",
+    "static/media/vscode.png": "/static/media/vscode.d793c746fbc937f66e3d.png",
     "static/media/rw.png": "/static/media/rw.d4f6d095d8e5380a554c.png",
+    "static/media/hackerrank.png": "/static/media/hackerrank.4de805af18db49421a12.png",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
+    "static/media/github-512.webp": "/static/media/github-512.01eff38eed74df9221c7.webp",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
+    "static/media/mongodb.svg": "/static/media/mongodb.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
     "index.html": "/index.html",
-    "main.35961376.css.map": "/static/css/main.35961376.css.map",
-    "main.02415157.js.map": "/static/js/main.02415157.js.map",
+    "main.fcf36db6.css.map": "/static/css/main.fcf36db6.css.map",
+    "main.a51c2dac.js.map": "/static/js/main.a51c2dac.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35961376.css",
-    "static/js/main.02415157.js"
+    "static/css/main.fcf36db6.css",
+    "static/js/main.a51c2dac.js"
   ]
 }
