@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.fcf36db6.css",
-    "main.js": "/static/js/main.a51c2dac.js",
+    "main.css": "/static/css/main.33a5d465.css",
+    "main.js": "/static/js/main.0a3114c3.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/rentmyride.png": "/static/media/rentmyride.27e98725acb5b9648bdd.png",
+    "static/media/propic2.jpg": "/static/media/propic2.b7f88f4192731e967cb6.jpg",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/static/media/PlayfairDisplay-VariableFont_wght.20240034b80f50c3ad00.ttf",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
     "static/media/PPNeueMontreal-Thin.ttf": "/static/media/PPNeueMontreal-Thin.79ab813ef18c7e673de5.ttf",
@@ -22,12 +24,12 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
     "static/media/mongodb.svg": "/static/media/mongodb.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
     "index.html": "/index.html",
-    "main.fcf36db6.css.map": "/static/css/main.fcf36db6.css.map",
-    "main.a51c2dac.js.map": "/static/js/main.a51c2dac.js.map",
+    "main.33a5d465.css.map": "/static/css/main.33a5d465.css.map",
+    "main.0a3114c3.js.map": "/static/js/main.0a3114c3.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcf36db6.css",
-    "static/js/main.a51c2dac.js"
+    "static/css/main.33a5d465.css",
+    "static/js/main.0a3114c3.js"
   ]
 }
