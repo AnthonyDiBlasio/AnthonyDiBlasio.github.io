@@ -18,43 +18,50 @@ import mongodb from '../images/mongodb.svg';
 import '../index.css';
 
 const Skills = () => {
+    
+  const styles = {
+    skills: {
+      marginTop:"2pc",
+
+    }
+  }
   return (
     <div className="skills-container">
-      <ul className='row'>
-        <ul className='col-6 col-md-3'>
+      <ul style={styles.skills} className='row'>
+        <ul className='col-6 col-md-3 text-center'>
           <FontAwesomeIcon icon={faReact} color='#61DAFB' /> React
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <FontAwesomeIcon icon={faJs} color='#F0DB4F' /> JavaScript
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <FontAwesomeIcon icon={faHtml5} color='#E44D26' /> HTML5
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <FontAwesomeIcon icon={faCss3} color='#264DE4' /> CSS3
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <FontAwesomeIcon icon={faNodeJs} color='#68A063' /> Node.js
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <img src={vscode} alt="VSCode" style={{ width: '20px', marginRight: '5px' }} /> VSCode
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <FontAwesomeIcon icon={faBootstrap} color='#563D7C' /> Bootstrap
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <img src={graphql} alt="GraphQL" style={{ width: '20px', marginRight: '5px' }} /> GraphQL
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <img src={mongodb} alt="Mongodb" style={{ width: '20px', marginRight: '5px' }} /> Mongodb
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <FontAwesomeIcon icon={faJira} color='#0052CC' /> JIRA
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <FontAwesomeIcon icon={faFigma} color='#F24E1E' /> Figma
         </ul>
-        <ul className='col-6 col-md-3'>
+        <ul className='col-6 col-md-3 text-center'>
           <img src={sql} alt="SQL" style={{ width: '20px', marginRight: '5px' }} /> SQL
         </ul>
       </ul>

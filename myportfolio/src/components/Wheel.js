@@ -7,7 +7,7 @@ import resume from "../images/resume.jpg";
 import hackerRank from "../images/hackerrank.png";
 import rw from "../images/rw.png";
 import rentmyride from "../images/rentmyride.png";
-import wheelImage from "../images/img_avatar.png";
+import wheelImage from "../images/propic2.jpg";
 
 export class Wheel extends Component {
   constructor(props) {
@@ -70,7 +70,7 @@ export class Wheel extends Component {
   handleWheelClick = () => {
     if (!this.state.hasSpun) {
       this.spinWheel();
-      this.setState({ hasSpun: true });
+      this.setState({ hasSpun: false });
     }
   };
 

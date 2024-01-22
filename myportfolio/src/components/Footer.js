@@ -13,7 +13,6 @@ export default function Footer() {
       position:'center',
       marginTop:"5pc",
       maxWidth: "100px",
-  
       cursor: "grab",
     }
   }

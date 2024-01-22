@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   height: 100%;
-  font-family: 'PPNeueMontreal-Thin', sans-serif;
+ 
 }
 
 /* Root styles */
@@ -20,7 +20,10 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-background-color: #f6f0ed;
+background-color: #fff;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
 }
 
 /* Header styles */
@@ -28,7 +31,7 @@ background-color: #f6f0ed;
   text-align: center;
   margin-top: 2pc;
   margin-bottom: 5pc;
-  font-family: 'PPNeueMontreal-thin', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .header h1 {
@@ -39,6 +42,7 @@ background-color: #f6f0ed;
 
 /* Row styles */
 .row {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   box-sizing: border-box;
   width: 100%;
   margin: 10px;
@@ -55,17 +59,21 @@ background-color: #f6f0ed;
 
 /* Skills container styles */
 .skills-container {
-  margin-top: 10pc;
-  margin-bottom: 5pc;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
+  padding:auto;
+  margin: auto;
+  
 }
 
 /* Define the custom font */
 @font-face {
   font-family: 'PPNeueMontreal-Thin';
   src: url('./fonts/PPNeueMontreal-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair Display', serif;
+  src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
